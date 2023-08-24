@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+/* header superior*/
+
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+
+.header_superior{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #555;
+}
+
+.logo img{
+    width: 80px;
+    margin-left: 35px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-left: 11%;
+}
+
+.search input{
+    width: 300px;
+    padding: 10px;
+    margin-right: 35px;
+}
+
+/*barra de menu*/
+.container_menu{
+    width: 100%;
+    height: 70px;
+    background: whitesmoke;
+    padding: 0px 5px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav  ul  li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li  > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li  > a:hover{
+    transform: scale(1.1);
+    background: #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* estse selected mantiene inicia en azul resaltado como 
+si tuviera el maus encima*/
+#selected{
+    transform: scale(1.1);
+    background : #0074c7;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+
+/*submenu*/
+
+nav > ul > li > ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+/*si quito visible no me deja mostrar el*/
+nav >ul >li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+
+
+
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: blue;
+    padding: 6px;
+    padding-left: 14px;
+    font-size: 20px;
+    transition: all 300ms ease;
+
+}
+   
+nav ul li ul li a:hover{
+    background: #0074c7;
+    color: white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*ensayo*/
+
+.submenu2{
+    display: none;
+    
+}
+
+.li2:hover .submenu2{
+    display: block;
+    opacity: 1;
+    top: 70px;
+}
+
+.li2{
+    position: relative;
+}
+
+.submenu2{
+    width: 250px;
+    background: #fff;
+    position: absolute;
+    margin-top: -72px;
+    left: 200px;
+    padding: 14px 0px;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+   
+}
+
+/* Estilos del cuerpo y del contenido*/
+
+
+

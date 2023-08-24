@@ -1,0 +1,120 @@
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.title {
+    position: absolute;
+    top: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 65px;
+    padding-left: 15%;
+    padding-top: 3%;
+}
+
+
+img {
+    position: absolute;
+    width: 222px;
+    height: auto;
+    top: 35%;
+    border-radius: 10px;
+    padding-left: 15%;
+    
+}
+
+.lema {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.form-register{
+    
+    position: absolute;
+    top: 13% ;
+    left: 50%;
+    width: auto;
+    height: auto;
+    background: black;
+    padding: 30px;
+    margin: auto;
+    border-radius: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+
+.form-register h3 {
+    font-family: "latin modern roman";
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.form-register .nomcontrols {
+    display: -moz-inline-stack;
+    font-family : "latin modern roman";
+}
+
+.form-register .controls {
+    width: 350px;
+    height: 25px;
+}
+
+.botons {
+    background-color: #ddd;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.botons1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.botons:hover, .botons1:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+footer p {
+    margin: 0;
+}
